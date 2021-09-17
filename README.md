@@ -1,2 +1,2 @@
-# Hellwig-method-Advisor
-Hellwig Method Advisor is the result of student academic project in the field of Econometrics .  It helps user to choose best unrelated variables to model. Advisor is implemented in Python programming language and accepts only xslx files. Just copy your data and replace example with your obtained information. Be carefull, because appropriate format of your data is also required.
+Hellwig method - Advisor
+Hellwig Method Advisor is the result of student's academic project in the field of Econometrics .  It helps user to choose best unrelated variables to model. The Advisor is implemented in Python programming language and accepts only xlsx files. Just copy your data and replace example with your obtained information. Be carefull, because an appropriate format of your data is also required.

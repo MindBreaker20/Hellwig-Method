@@ -20,7 +20,7 @@ var_cor = [] #all correlation coefficients between the explanatory and dependent
 H = [] #integral indicators of information integrity
 var_win = [] #the best explanatory variables
 
-#STAGE 1 - coefficient of variation Vj> 10%
+#STEP 1 - coefficient of variation Vj> 10%
 i = 1
 for c in range(1, var_number):  #for each column except column 1 with the explained variable
     xi = data1.loc[:,i]   #all numeric values in the column
@@ -62,7 +62,7 @@ for i in range(0, S):
             h = h.round(decimals = 6, out = None)
             final_matrix[i][j] = h
 
-#STAGE 5 - calculation of integral indicators of information capacity
+#STEP 5 - calculation of integral indicators of information capacity
 for i in range(0, S): #subsequent Hs are added to the list, then index will be found based on the position
     s = np.sum(final_matrix[i]) #the best combination of explanatory variables
     s = round(s, 6)
@@ -81,7 +81,7 @@ for i in range(0, m): #filling the list with variable names from the best combin
     if binary_matrix[idx][i] == 1:
         var_win.append(variables[i])
 
-print(f"Optymalnym zbiorem zmiennych objaśniających jest kombinacja C{idx}")
+print(f"The optimal set of explanatory variables is the combination C{idx}")
 for i in range(len(var_win)):
     print(var_win[i])
     

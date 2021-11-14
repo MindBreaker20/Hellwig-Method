@@ -84,16 +84,4 @@ for i in range(0, m): #filling the list with variable names from the best combin
 print(f"The optimal set of explanatory variables is the combination C{idx}")
 for i in range(len(var_win)):
     print(var_win[i])
-    
-
-
-
-
-
-
-
-
-
-
-
-
+  
